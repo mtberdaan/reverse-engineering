@@ -59,3 +59,30 @@ MOV is used to read the value at a given address, while LEA (Load Effective Addr
 
 In addition (ADD) and substraction (SUB) the OF (overflow flag), SF (sign flag) and CF carry flag) flags are affected.
 
+The INC instruction simply adds 1, while DEC substracts 1.
+
+MUL is used for multiplication and DIV for division, in multiplication it is expected that the results will exceed the capacity of the register value, hence the product is stored in AX.
+
+NEG does a two's complement
+MOVSX moves a BYTE to WORD or WORD to DWORD, it is more flixible than CBW, CWDE, CWD since it accomodates operands.
+CBW converts a BYTE into WORD or WORD into DWORD.
+CWDE converst WORD into DWORD
+CWD converts WORD into DWORD
+IMUL/IDIV this performs MUL and DIV, but accepts operands from other registers or memory.
+
+### Bitwise algebra
+
+NOT
+AND
+OR
+XOR
+SHL/SAL
+SHR/SAR
+ROL
+ROR
+
+### Control flow
+
+### Stack manipulation
+
+
